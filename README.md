@@ -28,15 +28,6 @@ npm test
 
 The checks use Node's built-in test runner and verify the static-site structure, internal links, external-link safety and zero-dependency constraint.
 
-## Publishing checklist
-
-Review these items before deployment:
-
-- Update project impact, responsibilities and stack where you can share more detail.
-- Confirm whether BearCode.me should remain in the public project list.
-- Add a CV PDF only after choosing the public document.
-- Recheck the hosting, logging and contact details in the legal pages before deployment.
-
 ## Design references
 
 - [GeekBoys, September 2002](https://web.archive.org/web/20020922031334/http://geekboys.org/)
