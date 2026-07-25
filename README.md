@@ -34,8 +34,8 @@ Review these items before deployment:
 
 - Update project impact, responsibilities and stack where you can share more detail.
 - Confirm whether BearCode.me should remain in the public project list.
-- Add an email link or a CV PDF only after choosing the public address/document.
-- Add an Impressum / privacy page if the final use case requires one.
+- Add a CV PDF only after choosing the public document.
+- Recheck the hosting, logging and contact details in the legal pages before deployment.
 
 ## Design references
 
@@ -55,3 +55,6 @@ The source code is available under the [MIT License](LICENSE).
 
 Written content and images, including `portrait.jpg`, are copyright
 Cornelius Putzler-Marci and are not covered by the MIT License.
+
+Locally hosted technology icons and their terms are documented in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

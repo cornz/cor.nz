@@ -131,7 +131,7 @@
     "cv.txt": [
       "2024—now   Quantum Trade Solutions / Edgewonk — Technical Lead (full-time)",
       "2016—2023  Edgewonk — Freelance Software Developer & DevOps",
-      "2016—2023  Weblicity — Software Developer",
+      "2016—2023  Compliance Solutions — Software Developer",
       "2016—2021  BearCode.me — Founder & CTO",
       "2015—2016  aexea — Software Developer",
       "2008—2014  University of Stuttgart — Applied Computational Linguistics",
@@ -139,7 +139,6 @@
     "projects.txt": [
       "2016—now   Edgewonk — trading journal and analysis software",
       "2026—now   TrimWM — native macOS tiling window manager",
-      "2026       pbs-vm-monitor — Proxmox Backup Server monitor",
       "2026       cor.nz reboot — this website",
       "2021—2025  Advent of Code — puzzle solutions",
       "2016—2021  BearCode.me — product-text generation",
@@ -148,7 +147,7 @@
     "skills.txt": [
       "languages: Swift · Kotlin · Java · TypeScript · C# · Python · JavaScript",
       "apps & web: Angular · SwiftUI · AppKit · MapKit · StoreKit · HTML / CSS",
-      "backend & data: Spring Boot · Ktor · .NET · MariaDB · PostgreSQL · SQL Server · Elasticsearch",
+      "backend & data: Spring Boot · Ktor · .NET · MariaDB · PostgreSQL · Microsoft SQL Server · Elasticsearch",
       "systems & delivery: DevOps · Linux · Proxmox · Docker · Ansible · TeamCity · Git · Flyway",
       "platform work: REST APIs · Background Workers · S3 / MinIO · macOS Accessibility",
       "domains: NLP / NLG · Data Processing · Compliance Software · Trade Analytics",
@@ -163,6 +162,7 @@
   };
 
   const terminalLinks = [
+    ["email", "mailto:hi@cor.nz"],
     ["github.url", "https://github.com/cornz"],
     ["linkedin.url", "https://www.linkedin.com/in/cornz"],
     ["x.url", "https://x.com/CPUtzler"],
@@ -189,9 +189,11 @@
       line.append(`${label.padEnd(14)} `);
       const link = document.createElement("a");
       link.href = href;
-      link.target = "_blank";
-      link.rel = "noreferrer";
-      link.textContent = href;
+      if (!href.startsWith("mailto:")) {
+        link.target = "_blank";
+        link.rel = "noreferrer";
+      }
+      link.textContent = href.startsWith("mailto:") ? href.slice(7) : href;
       line.append(link);
       terminalOutput.append(line);
     });
