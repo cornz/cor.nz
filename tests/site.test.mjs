@@ -11,6 +11,7 @@ const [
   packageJson,
   portrait,
   iconSprite,
+  dotGrid,
   thirdPartyNotices,
   imprint,
   privacy,
@@ -23,6 +24,7 @@ const [
   readFile(new URL("../package.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../portrait.jpg", import.meta.url)),
   readFile(new URL("../assets/icons.svg", import.meta.url), "utf8"),
+  readFile(new URL("../assets/dot-grid.svg", import.meta.url), "utf8"),
   readFile(new URL("../THIRD_PARTY_NOTICES.md", import.meta.url), "utf8"),
   readFile(new URL("../impressum.html", import.meta.url), "utf8"),
   readFile(new URL("../datenschutz.html", import.meta.url), "utf8"),
@@ -148,6 +150,8 @@ test("uses the real portrait and dependency-free visual treatment", () => {
   assert.match(html, /<img src="portrait\.jpg" alt="Cornelius Putzler-Marci relaxing on a beach chair">/);
   assert.ok(portrait.length > 50_000);
   assert.deepEqual([...portrait.subarray(0, 3)], [0xff, 0xd8, 0xff]);
+  assert.match(css, /background-image: url\("assets\/dot-grid\.svg"\)/);
+  assert.match(dotGrid, /<circle\b/);
   assert.doesNotMatch(css, /radial-gradient|(^|[^-])linear-gradient\(/m);
   assert.doesNotMatch(html, /portrait\.jpg · 4:5|static · external dependencies: none/);
 });

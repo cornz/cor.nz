@@ -1,6 +1,6 @@
 :root {
-  --bg: #070503;
-  --bg-deep: #020201;
+  --bg: #0b0907;
+  --bg-deep: #080705;
   --surface: #0d0905;
   --surface-raised: #130d08;
   --ink: #f3eadb;
@@ -67,7 +67,10 @@ body {
   margin: 0;
   overflow-x: clip;
   color: var(--ink);
-  background: var(--bg-deep);
+  background-color: var(--bg-deep);
+  background-image: url("assets/dot-grid.svg");
+  background-position: 0 0;
+  background-size: 28px 28px;
   font-family: var(--mono);
   font-size: 15px;
   line-height: 1.65;
