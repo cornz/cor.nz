@@ -139,6 +139,7 @@
     "projects.txt": [
       "2016—now   Edgewonk — trading journal and analysis software",
       "2026—now   TrimWM — native macOS tiling window manager",
+      "2026—now   DevControlRoom — macOS menu bar control for local development services",
       "2026       cor.nz reboot — this website",
       "2021—2025  Advent of Code — puzzle solutions",
       "2016—2021  BearCode.me — product-text generation",

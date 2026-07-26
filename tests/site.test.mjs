@@ -87,10 +87,17 @@ test("contains the verified profile, career and project information", () => {
   assert.doesNotMatch(`${html}\n${script}`, /Weblicity|pbs-vm-monitor/);
   assert.match(html, /aria-label="Edgewonk, 2016 to now"/);
   assert.match(html, /href="https:\/\/github\.com\/cornz\/TrimWM"/);
+  assert.match(html, /href="https:\/\/github\.com\/cornz\/DevControlRoom"/);
+  assert.match(script, /DevControlRoom — macOS menu bar control for local development services/);
   assert.doesNotMatch(html, /release candidate/);
   const trimStart = html.indexOf('aria-label="TrimWM, 2026 to now"');
   const trimEnd = html.indexOf('<li class="career-lane', trimStart);
   assert.match(html.slice(trimStart, trimEnd), /open source/);
+  const controlRoomStart = html.indexOf('aria-label="DevControlRoom, 2026 to now"');
+  const controlRoomEnd = html.indexOf('<li class="career-lane', controlRoomStart);
+  assert.ok(controlRoomStart >= 0);
+  assert.match(html.slice(controlRoomStart, controlRoomEnd), /open source/);
+  assert.match(html.slice(controlRoomStart, controlRoomEnd), /SwiftUI/);
   assert.match(html, /Villingen-Schwenningen/);
   assert.match(html, /class="scope-tags"/);
 });
