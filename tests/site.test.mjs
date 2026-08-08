@@ -137,7 +137,11 @@ test("provides a flat, text-file-oriented terminal", () => {
 
 test("supports theme persistence, responsive layout and reduced motion", () => {
   assert.match(themeInit, /localStorage\.getItem\("cor-theme"\)/);
+  assert.match(themeInit, /let theme = "light"/);
+  assert.match(themeInit, /=== "dark"/);
   assert.match(script, /localStorage\.setItem\("cor-theme"/);
+  assert.match(html, /name="theme-color" content="#e5dac8"/);
+  assert.match(html, /aria-label="Switch to dark mode" aria-pressed="true">\[ dark \]<\/button>/);
   assert.match(css, /html\[data-theme="light"\]/);
   assert.match(css, /@media \(max-width: 640px\)/);
   assert.match(css, /\.signal-strip \{\s*grid-template-columns: 1fr;/);
