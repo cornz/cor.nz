@@ -35,16 +35,16 @@ test("uses only local assets and no npm dependencies", () => {
 
   assert.deepEqual(assets, [
     "favicon.svg",
-    "theme-init.js?v=retro-readable-16",
-    "styles.css?v=retro-readable-16",
-    "script.js?v=retro-readable-16",
+    "theme-init.js?v=retro-readable-17",
+    "styles.css?v=retro-readable-17",
+    "script.js?v=retro-readable-17",
   ]);
   assert.deepEqual(packageJson.dependencies, {});
   assert.deepEqual(packageJson.devDependencies, {});
 });
 
 test("serves documented technology icons from the local sprite", () => {
-  const iconReferences = [...html.matchAll(/href="assets\/icons\.svg\?v=retro-readable-16#([^"]+)"/g)].map((match) => match[1]);
+  const iconReferences = [...html.matchAll(/href="assets\/icons\.svg\?v=retro-readable-17#([^"]+)"/g)].map((match) => match[1]);
   const iconIds = new Set([...iconSprite.matchAll(/<symbol id="([^"]+)"/g)].map((match) => match[1]));
 
   assert.ok(iconReferences.length >= 20);
@@ -87,10 +87,10 @@ test("contains the verified profile, career and project information", () => {
   assert.match(html, /Edgewonk/);
   assert.match(html, /Freelance Software Developer &amp; DevOps/);
   assert.match(html, /Founder &amp; CTO/);
-  assert.match(html, /assets\/icons\.svg\?v=retro-readable-16#database/);
+  assert.match(html, /assets\/icons\.svg\?v=retro-readable-17#database/);
   assert.match(html, /Microsoft SQL Server/);
   assert.match(html, /href="mailto:hi@cor\.nz"/);
-  assert.match(html, /assets\/icons\.svg\?v=retro-readable-16#mail/);
+  assert.match(html, /assets\/icons\.svg\?v=retro-readable-17#mail/);
   assert.doesNotMatch(`${html}\n${script}`, /Weblicity|pbs-vm-monitor/);
   assert.match(html, /Trading journal and analysis software/);
   assert.match(html, /href="https:\/\/github\.com\/cornz\/TrimWM"/);
@@ -142,11 +142,11 @@ test("keeps the interface simple and content-first", () => {
 
 test("supports theme persistence, responsive layout and reduced motion", () => {
   assert.match(themeInit, /localStorage\.getItem\("cor-theme"\)/);
-  assert.match(themeInit, /let theme = "light"/);
-  assert.match(themeInit, /=== "dark"/);
+  assert.match(themeInit, /let theme = "dark"/);
+  assert.match(themeInit, /=== "light"/);
   assert.match(script, /localStorage\.setItem\("cor-theme"/);
-  assert.match(html, /name="theme-color" content="#e8e3d8"/);
-  assert.match(html, /aria-label="Switch to dark mode" aria-pressed="true">\[ dark \]<\/button>/);
+  assert.match(html, /name="theme-color" content="#000000"/);
+  assert.match(html, /aria-label="Switch to light mode" aria-pressed="false">\[ light \]<\/button>/);
   assert.match(css, /html\[data-theme="light"\]/);
   assert.match(css, /@media \(max-width: 440px\)/);
   assert.match(css, /prefers-reduced-motion/);

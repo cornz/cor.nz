@@ -1,10 +1,10 @@
 (() => {
   "use strict";
 
-  let theme = "light";
+  let theme = "dark";
 
   try {
-    if (window.localStorage.getItem("cor-theme") === "dark") theme = "dark";
+    if (window.localStorage.getItem("cor-theme") === "light") theme = "light";
   } catch {
     // The site still works when storage is unavailable.
   }
