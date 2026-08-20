@@ -43,6 +43,13 @@ test("uses only local assets and no npm dependencies", () => {
   assert.deepEqual(packageJson.devDependencies, {});
 });
 
+test("does not use em dashes", () => {
+  assert.doesNotMatch(
+    [html, css, script, themeInit, readme, iconSprite, dotGrid, thirdPartyNotices, imprint, privacy].join("\n"),
+    /\u2014/,
+  );
+});
+
 test("serves documented technology icons from the local sprite", () => {
   const iconReferences = [...html.matchAll(/href="assets\/icons\.svg\?v=retro-readable-17#([^"]+)"/g)].map((match) => match[1]);
   const iconIds = new Set([...iconSprite.matchAll(/<symbol id="([^"]+)"/g)].map((match) => match[1]));
