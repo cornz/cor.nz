@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="theme-color" name="theme-color" content="#e5dac8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta id="theme-color" name="theme-color" content="#e8e3d8">
     <meta
       name="description"
       content="Cornelius Putzler-Marci — software developer with a background in computational linguistics."
@@ -17,17 +18,12 @@
     <meta property="og:url" content="https://cor.nz/">
     <title>Cornelius Putzler-Marci — Software Developer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <script src="theme-init.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="theme-init.js?v=retro-readable-16"></script>
+    <link rel="stylesheet" href="styles.css?v=retro-readable-16">
+    <script src="script.js?v=retro-readable-16" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
-
-    <div class="scanlines" aria-hidden="true"></div>
-    <div class="compact-header" id="compact-header" aria-hidden="true">
-      <div class="compact-header__inner"><span>[ COR.NZ ]</span></div>
-    </div>
 
     <div class="site-shell" id="top">
       <header class="site-header">
@@ -41,220 +37,89 @@ C      O   O  R  R       N  NN   Z
         </a>
 
         <nav class="main-nav" aria-label="Primary navigation">
-          <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="nav-popover" aria-expanded="false">
-            <span class="visually-hidden">Toggle navigation</span>
-            <span class="nav-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span>
-          </button>
-          <div class="nav-popover" id="nav-popover">
-            <div class="nav-links" id="nav-links">
-              <a href="#experience"><span>01.</span> cv</a>
-              <a href="#about"><span>02.</span> about</a>
-              <a href="#work"><span>03.</span> projects</a>
-              <a href="#contact"><span>04.</span> contact</a>
-              <a href="#off-duty"><span>05.</span> hobbies</a>
-            </div>
-            <button class="theme-switch" id="theme-switch" type="button" aria-label="Switch to dark mode" aria-pressed="true">[ dark ]</button>
+          <div class="nav-links" id="nav-links">
+            <a href="#experience">cv</a>
+            <a href="#skills">skills</a>
+            <a href="#work">projects</a>
+            <a href="#contact">contact</a>
+            <a href="#off-duty">hobbies</a>
           </div>
+          <button class="theme-switch" id="theme-switch" type="button" aria-label="Switch to dark mode" aria-pressed="true">[ dark ]</button>
         </nav>
       </header>
-
-      <div class="signal-strip" aria-label="Profile summary">
-        <p><b>role:</b> Technical Lead</p>
-        <p><b>location:</b> Villingen-Schwenningen</p>
-        <p>
-          <b>fields:</b>
-          <span class="signal-tags"><span>Software</span><span>Data</span><span>Language</span></span>
-        </p>
-        <p><b>current:</b> Edgewonk</p>
-      </div>
 
       <main id="content">
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <h1 class="visually-hidden" id="hero-title">Cornelius Putzler-Marci — Software Developer</h1>
-            <div class="terminal-panel" id="terminal" aria-label="Interactive terminal">
-              <header><span>guest@cor.nz</span><span>tty1</span></header>
-              <div class="terminal-output" id="terminal-output" aria-live="polite">
-                <p>Connected to cor.nz.</p>
-                <p>Type <b>ls</b>, then <b>cat</b> any .txt file. Press <b>Tab</b> to complete.</p>
-              </div>
-              <form class="terminal-form" id="terminal-form" autocomplete="off">
-                <label for="terminal-input">
-                  <span class="terminal-prompt-full">guest@cor.nz:~$</span>
-                  <span class="terminal-prompt-short" aria-hidden="true">~$</span>
-                </label>
-                <input id="terminal-input" name="command" type="text" inputmode="text" spellcheck="false" aria-describedby="terminal-hint">
-                <button type="submit" aria-label="Run command">↵</button>
-              </form>
-              <p class="visually-hidden" id="terminal-hint">Try help, pwd, ls, cat cv.txt, cat projects.txt, cat skills.txt or clear. Press Tab to complete commands and file names.</p>
-            </div>
+            <h1 id="hero-title">Cornelius<br>Putzler-Marci</h1>
           </div>
 
-          <aside class="hero-readout" aria-label="Current readout">
-            <div class="readout-heading">
-              <span>stdout</span>
-              <span>exit 0</span>
-            </div>
-            <div class="readout-profile">
-              <figure class="portrait-slot">
-                <img src="portrait.jpg" alt="Cornelius Putzler-Marci relaxing on a beach chair">
-              </figure>
-              <dl class="readout-identity">
-                <div>
-                  <dt>name</dt>
-                  <dd>Cornelius Putzler-Marci</dd>
-                </div>
-                <div>
-                  <dt>current role</dt>
-                  <dd>Technical Lead @ Edgewonk</dd>
-                </div>
-              </dl>
-            </div>
-            <dl class="readout-details">
-              <div>
-                <dt>discipline</dt>
-                <dd>software engineering</dd>
-              </div>
-              <div>
-                <dt>background</dt>
-                <dd>computational linguistics</dd>
-              </div>
-              <div>
-                <dt>preference</dt>
-                <dd>clear &amp; maintainable</dd>
-              </div>
-              <div>
-                <dt>scope</dt>
-                <dd>
-                  <ul class="scope-tags">
-                    <li>Software</li>
-                    <li>Infrastructure</li>
-                    <li>Technical Direction</li>
-                    <li>Hiring</li>
-                  </ul>
-                </dd>
-              </div>
-            </dl>
-          </aside>
+          <figure class="portrait-slot">
+            <img src="portrait.jpg" alt="Cornelius Putzler-Marci relaxing on a beach chair">
+          </figure>
         </section>
 
         <div class="primary-feed">
             <section class="content-section" id="experience" aria-labelledby="experience-title">
               <header class="section-heading">
                 <div>
-                  <p class="section-index">01 / $ cat cv.txt</p>
-                  <h2 id="experience-title">Work and education.</h2>
+                  <p class="section-index" id="experience-title">01 / CV</p>
                 </div>
-                <p>Shared time scale — overlapping bars show parallel roles.</p>
               </header>
 
               <div class="career-map">
-                <div class="career-scale" aria-hidden="true">
-                  <span class="career-scale-label">year</span>
-                  <div class="career-years">
-                    <span style="--at: 1">2008</span>
-                    <span class="career-year--minor" style="--at: 5">2012</span>
-                    <span style="--at: 9">2016</span>
-                    <span class="career-year--minor" style="--at: 13">2020</span>
-                    <span style="--at: 17">2024</span>
-                    <span style="--at: 19">now</span>
-                  </div>
-                </div>
-
                 <ol class="career-lanes">
                   <li class="career-lane career-lane--current" style="--from: 17; --to: 20">
                     <div class="career-date"><span>2024</span><span>now</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://edgewonk.com/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">EW</span>
-                            <span>Quantum Trade Solutions / Edgewonk</span>
-                          </a>
-                        </p>
+                        <p class="career-company"><a href="https://edgewonk.com/" target="_blank" rel="noreferrer">Quantum Trade Solutions</a></p>
                         <h3>Technical Lead</h3>
-                        <p>Full-time Technical Lead since 2024, responsible for technical decisions, software development, DevOps and engineering hiring.</p>
                       </div>
                     </div>
                   </li>
                   <li class="career-lane career-lane--freelance" style="--from: 9; --to: 17">
                     <div class="career-date"><span>2016</span><span>2023</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://edgewonk.com/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">EW</span>
-                            <span>Edgewonk</span>
-                          </a>
-                        </p>
+                        <p class="career-company"><a href="https://edgewonk.com/" target="_blank" rel="noreferrer">Quantum Trade Solutions</a></p>
                         <h3>Freelance Software Developer &amp; DevOps</h3>
-                        <p>Responsible for the product’s software and technical operations before joining full-time.</p>
                       </div>
                     </div>
                   </li>
                   <li class="career-lane" style="--from: 9; --to: 17">
                     <div class="career-date"><span>2016</span><span>2023</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://compliancesolutions.com/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">CS</span>
-                            <span>Compliance Solutions</span>
-                          </a>
-                        </p>
-                        <h3>Software Developer</h3>
-                        <p>Developed compliance and IT audit software in C# and Python, using SQL Server and Elasticsearch; also worked on APIs, releases, deployment and technical guidance.</p>
+                        <p class="career-company"><a href="https://compliancesolutions.com/" target="_blank" rel="noreferrer">Compliance Solutions</a></p>
+                        <h3>Senior Software Developer</h3>
                       </div>
                     </div>
                   </li>
                   <li class="career-lane career-lane--founder" style="--from: 9; --to: 15">
                     <div class="career-date"><span>2016</span><span>2021</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://bearcode.me/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">BC</span>
-                            <span>BearCode.me</span>
-                          </a>
-                        </p>
+                        <p class="career-company"><a href="https://bearcode.me/" target="_blank" rel="noreferrer">BearCode.me</a></p>
                         <h3>Founder &amp; CTO</h3>
-                        <p>Built software for generating product text from structured commerce data.</p>
                       </div>
                     </div>
                   </li>
                   <li class="career-lane" style="--from: 8; --to: 10">
                     <div class="career-date"><span>2015</span><span>2016</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://ax-semantics.com/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">AX</span>
-                            <span>aexea</span>
-                          </a>
-                        </p>
+                        <p class="career-company"><a href="https://ax-semantics.com/" target="_blank" rel="noreferrer">aexea</a></p>
                         <h3>Software Developer</h3>
-                        <p>Built NLG tooling and editor interfaces with JavaScript, CoffeeScript, Python and NoSQL; delivered multilingual customer projects and training.</p>
                       </div>
                     </div>
                   </li>
                   <li class="career-lane career-lane--education" style="--from: 1; --to: 8">
                     <div class="career-date"><span>2008</span><span>2014</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-hidden="true"><span></span></div>
                       <div class="career-copy">
-                        <p class="career-company">
-                          <a href="https://www.uni-stuttgart.de/" target="_blank" rel="noreferrer">
-                            <span class="company-mark" aria-hidden="true">US</span>
-                            <span>University of Stuttgart</span>
-                          </a>
-                        </p>
+                        <p class="career-company"><a href="https://www.uni-stuttgart.de/" target="_blank" rel="noreferrer">University of Stuttgart</a></p>
                         <h3>Applied Computational Linguistics</h3>
-                        <p>Applied computational linguistics, including information retrieval, machine learning and software development.</p>
                       </div>
                     </div>
                   </li>
@@ -262,63 +127,23 @@ C      O   O  R  R       N  NN   Z
               </div>
             </section>
 
-            <section class="content-section" id="about" aria-labelledby="about-title">
-              <header class="section-heading">
-                <div>
-                  <p class="section-index">02 / $ cat about.txt</p>
-                  <h2 id="about-title">About me.</h2>
-                </div>
-              </header>
-
-              <div class="about-grid">
-                <div class="about-copy">
-                  <p class="large-copy">
-                    I studied applied computational linguistics at the University of Stuttgart. The subject combines
-                    language, data and programming. Since then I’ve worked as a software developer in agencies, a
-                    startup and product teams.
-                  </p>
-                  <p>
-                    I prefer code that is easy to understand, software that behaves predictably, and solutions that
-                    other people can maintain.
-                  </p>
-                </div>
-
-                <div class="principles" aria-label="Working principles">
-                  <article>
-                    <span>01</span>
-                    <h3>Find the cause</h3>
-                    <p>Understand the problem before changing the code.</p>
-                  </article>
-                  <article>
-                    <span>02</span>
-                    <h3>Release and learn</h3>
-                    <p>Put working software in front of users early.</p>
-                  </article>
-                  <article>
-                    <span>03</span>
-                    <h3>Write it clearly</h3>
-                    <p>In code, interfaces and documentation.</p>
-                  </article>
-                </div>
-              </div>
-
+            <section class="content-section" id="skills" aria-labelledby="skills-title">
               <div class="skills-readout" aria-labelledby="skills-title">
                 <header>
-                  <p class="section-index" id="skills-title">$ cat skills.txt</p>
-                  <p>Selected, not exhaustive.</p>
+                  <p class="section-index" id="skills-title">02 / Skills</p>
                 </header>
                 <dl class="skill-groups">
                   <div>
                     <dt>languages</dt>
                     <dd>
                       <ul class="skill-tags">
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#swift"></use></svg>Swift</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#kotlin"></use></svg>Kotlin</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#openjdk"></use></svg>Java</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#typescript"></use></svg>TypeScript</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#dotnet"></use></svg>C#</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#python"></use></svg>Python</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#javascript"></use></svg>JavaScript</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#swift"></use></svg>Swift</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#kotlin"></use></svg>Kotlin</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#openjdk"></use></svg>Java</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#typescript"></use></svg>TypeScript</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#dotnet"></use></svg>C#</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#python"></use></svg>Python</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#javascript"></use></svg>JavaScript</li>
                       </ul>
                     </dd>
                   </div>
@@ -326,15 +151,15 @@ C      O   O  R  R       N  NN   Z
                     <dt>apps &amp; web</dt>
                     <dd>
                       <ul class="skill-tags">
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#angular"></use></svg>Angular</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#apple"></use></svg>SwiftUI</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#apple"></use></svg>AppKit</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#apple"></use></svg>MapKit</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#apple"></use></svg>StoreKit</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#angular"></use></svg>Angular</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#apple"></use></svg>SwiftUI</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#apple"></use></svg>AppKit</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#apple"></use></svg>MapKit</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#apple"></use></svg>StoreKit</li>
                         <li>
                           <span class="brand-icon-pair" aria-hidden="true">
-                            <svg class="brand-icon"><use href="assets/icons.svg#html5"></use></svg>
-                            <svg class="brand-icon"><use href="assets/icons.svg#css"></use></svg>
+                            <svg class="brand-icon"><use href="assets/icons.svg?v=retro-readable-16#html5"></use></svg>
+                            <svg class="brand-icon"><use href="assets/icons.svg?v=retro-readable-16#css"></use></svg>
                           </span>
                           HTML / CSS
                         </li>
@@ -345,13 +170,13 @@ C      O   O  R  R       N  NN   Z
                     <dt>backend &amp; data</dt>
                     <dd>
                       <ul class="skill-tags">
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#springboot"></use></svg>Spring Boot</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#ktor"></use></svg>Ktor</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#dotnet"></use></svg>.NET</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#mariadb"></use></svg>MariaDB</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#postgresql"></use></svg>PostgreSQL</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#database"></use></svg>Microsoft SQL Server</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#elasticsearch"></use></svg>Elasticsearch</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#springboot"></use></svg>Spring Boot</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#ktor"></use></svg>Ktor</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#dotnet"></use></svg>.NET</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#mariadb"></use></svg>MariaDB</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#postgresql"></use></svg>PostgreSQL</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#database"></use></svg>Microsoft SQL Server</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#elasticsearch"></use></svg>Elasticsearch</li>
                       </ul>
                     </dd>
                   </div>
@@ -360,13 +185,13 @@ C      O   O  R  R       N  NN   Z
                     <dd>
                       <ul class="skill-tags">
                         <li>DevOps</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#linux"></use></svg>Linux</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#proxmox"></use></svg>Proxmox</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#docker"></use></svg>Docker</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#ansible"></use></svg>Ansible</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#teamcity"></use></svg>TeamCity</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#git"></use></svg>Git</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#flyway"></use></svg>Flyway</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#linux"></use></svg>Linux</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#proxmox"></use></svg>Proxmox</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#docker"></use></svg>Docker</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#ansible"></use></svg>Ansible</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#teamcity"></use></svg>TeamCity</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#git"></use></svg>Git</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#flyway"></use></svg>Flyway</li>
                       </ul>
                     </dd>
                   </div>
@@ -376,8 +201,8 @@ C      O   O  R  R       N  NN   Z
                       <ul class="skill-tags">
                         <li>REST APIs</li>
                         <li>Background Workers</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#minio"></use></svg>S3 / MinIO</li>
-                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg#apple"></use></svg>macOS Accessibility</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#minio"></use></svg>S3 / MinIO</li>
+                        <li><svg class="brand-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#apple"></use></svg>macOS Accessibility</li>
                       </ul>
                     </dd>
                   </div>
@@ -396,40 +221,18 @@ C      O   O  R  R       N  NN   Z
             <section class="content-section" id="work" aria-labelledby="work-title">
               <header class="section-heading">
                 <div>
-                  <p class="section-index">03 / $ cat projects.txt</p>
-                  <h2 id="work-title">A few things I’ve worked on.</h2>
+                  <p class="section-index" id="work-title">03 / Projects</p>
                 </div>
-                <p>Shared time scale — overlapping bars show parallel projects.</p>
               </header>
 
               <div class="career-map project-map">
-                <div class="career-scale" aria-hidden="true">
-                  <span class="career-scale-label">year</span>
-                  <div class="career-years">
-                    <span style="--at: 1">2016</span>
-                    <span class="career-year--minor" style="--at: 3">2018</span>
-                    <span style="--at: 5">2020</span>
-                    <span class="career-year--minor" style="--at: 7">2022</span>
-                    <span style="--at: 9">2024</span>
-                    <span style="--at: 11">now</span>
-                  </div>
-                </div>
-
                 <ol class="career-lanes project-lanes">
                   <li class="career-lane career-lane--current" style="--from: 1; --to: 12">
                     <div class="career-date"><span>2016</span><span>now</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="Edgewonk, 2016 to now"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">work / trading software</p>
-                          <span class="status-badge"><i aria-hidden="true"></i> live</span>
-                        </div>
-                        <h3><a href="https://edgewonk.com/" target="_blank" rel="noreferrer">Edgewonk <span aria-hidden="true">↗</span></a></h3>
-                        <p>I have worked on Edgewonk since 2016: initially freelance across software development, DevOps and technical operations, and since 2024 full-time as Technical Lead.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>software development</li><li>trade analysis</li><li>web application</li>
-                        </ul>
+                        <h3><a href="https://edgewonk.com/" target="_blank" rel="noreferrer">Edgewonk</a></h3>
+                        <p>Trading journal and analysis software.</p>
                       </div>
                     </div>
                   </li>
@@ -437,17 +240,9 @@ C      O   O  R  R       N  NN   Z
                   <li class="career-lane career-lane--current" style="--from: 11; --to: 12">
                     <div class="career-date"><span>2026</span><span>now</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="TrimWM, 2026 to now"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">macOS utility / window manager</p>
-                          <span class="status-badge"><i aria-hidden="true"></i> open source</span>
-                        </div>
-                        <h3><a href="https://github.com/cornz/TrimWM" target="_blank" rel="noreferrer">TrimWM <span aria-hidden="true">↗</span></a></h3>
-                        <p>A native tiling window manager for Apple Silicon Macs, combining i3-style BSP autotiling with Niri-style scrolling columns. Fast, animation-free and dependency-free.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>Swift</li><li>macOS</li><li>Accessibility</li><li>window management</li>
-                        </ul>
+                        <h3><a href="https://github.com/cornz/TrimWM" target="_blank" rel="noreferrer">TrimWM</a></h3>
+                        <p>A native tiling window manager.</p>
                       </div>
                     </div>
                   </li>
@@ -455,17 +250,9 @@ C      O   O  R  R       N  NN   Z
                   <li class="career-lane career-lane--current" style="--from: 11; --to: 12">
                     <div class="career-date"><span>2026</span><span>now</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="DevControlRoom, 2026 to now"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">macOS utility / developer tools</p>
-                          <span class="status-badge"><i aria-hidden="true"></i> open source</span>
-                        </div>
-                        <h3><a href="https://github.com/cornz/DevControlRoom" target="_blank" rel="noreferrer">DevControlRoom <span aria-hidden="true">↗</span></a></h3>
-                        <p>A native menu bar control room for running and monitoring local development services, with combined logs, process status and error alerts.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>Swift</li><li>SwiftUI</li><li>macOS</li><li>developer tools</li>
-                        </ul>
+                        <h3><a href="https://github.com/cornz/DevControlRoom" target="_blank" rel="noreferrer">DevControlRoom</a></h3>
+                        <p>Menu bar controls for local development services.</p>
                       </div>
                     </div>
                   </li>
@@ -473,17 +260,9 @@ C      O   O  R  R       N  NN   Z
                   <li class="career-lane career-lane--current" style="--from: 11; --to: 12">
                     <div class="career-date"><span>2026</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="cor.nz reboot, 2026"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">this website</p>
-                          <span class="status-badge"><i aria-hidden="true"></i> live</span>
-                        </div>
-                        <h3><a href="#top">cor.nz reboot <span aria-hidden="true">↑</span></a></h3>
-                        <p>A modern version of the old GeekBoys/SoGamed look. Built with semantic HTML, CSS and vanilla JavaScript; zero runtime dependencies.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>HTML</li><li>CSS</li><li>vanilla JS</li><li>0 deps</li>
-                        </ul>
+                        <h3><a href="#top">cor.nz reboot</a></h3>
+                        <p>Plain HTML, CSS and JavaScript.</p>
                       </div>
                     </div>
                   </li>
@@ -491,17 +270,9 @@ C      O   O  R  R       N  NN   Z
                   <li class="career-lane career-lane--freelance" style="--from: 6; --to: 11">
                     <div class="career-date"><span>2021</span><span>2025</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="Advent of Code, 2021 to 2025"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">code puzzles</p>
-                          <span class="status-badge status-badge--lab">lab</span>
-                        </div>
-                        <h3><a href="https://github.com/cornz/aoc2025" target="_blank" rel="noreferrer">Advent of Code <span aria-hidden="true">↗</span></a></h3>
-                        <p>Five years of puzzle solutions. Mostly Kotlin, sometimes Zig. Some years are more complete than others.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>Kotlin</li><li>Zig</li><li>algorithms</li><li>puzzles</li>
-                        </ul>
+                        <h3><a href="https://github.com/cornz/aoc2025" target="_blank" rel="noreferrer">Advent of Code</a></h3>
+                        <p>Puzzle solutions in Kotlin and Zig.</p>
                       </div>
                     </div>
                   </li>
@@ -509,17 +280,9 @@ C      O   O  R  R       N  NN   Z
                   <li class="career-lane career-lane--founder" style="--from: 1; --to: 7">
                     <div class="career-date"><span>2016</span><span>2021</span></div>
                     <div class="career-entry">
-                      <div class="career-track" aria-label="BearCode.me, 2016 to 2021"><span></span></div>
                       <div class="career-copy project-timeline-copy">
-                        <div class="project-lane-meta">
-                          <p class="career-company">founded / text generation</p>
-                          <span class="status-badge status-badge--archive">archive</span>
-                        </div>
-                        <h3><a href="https://www.startbase.de/organization/bearcode-me/" target="_blank" rel="noreferrer">BearCode.me <span aria-hidden="true">↗</span></a></h3>
-                        <p>As Founder &amp; CTO, I built software that generated product text from structured commerce data. The work covered NLP, data processing and automation.</p>
-                        <ul class="tag-list" aria-label="Project topics">
-                          <li>NLG</li><li>automation</li><li>data</li>
-                        </ul>
+                        <h3><a href="https://www.startbase.de/organization/bearcode-me/" target="_blank" rel="noreferrer">BearCode.me</a></h3>
+                        <p>Product-text generation from structured data.</p>
                       </div>
                     </div>
                   </li>
@@ -529,35 +292,33 @@ C      O   O  R  R       N  NN   Z
 
             <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
               <div>
-                <p class="section-index">04 / $ cat contact.txt</p>
-                <h2 id="contact-title">Want to get in touch?</h2>
-                <p>For work, code or just to say hello — send me a message.</p>
+                <p class="section-index" id="contact-title">04 / Contact</p>
               </div>
               <div class="contact-links">
                 <a href="mailto:hi@cor.nz">
                   <span class="contact-label">
-                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg#mail"></use></svg>
+                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#mail"></use></svg>
                     hi@cor.nz
                   </span>
                   <span>write ↗</span>
                 </a>
                 <a href="https://www.linkedin.com/in/cornz" target="_blank" rel="noreferrer">
                   <span class="contact-label">
-                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg#network"></use></svg>
+                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#network"></use></svg>
                     LinkedIn
                   </span>
                   <span>open ↗</span>
                 </a>
                 <a href="https://github.com/cornz" target="_blank" rel="noreferrer">
                   <span class="contact-label">
-                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>
+                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#github"></use></svg>
                     GitHub
                   </span>
                   <span>open ↗</span>
                 </a>
                 <a href="https://x.com/CPUtzler" target="_blank" rel="noreferrer">
                   <span class="contact-label">
-                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg#x"></use></svg>
+                    <svg class="contact-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#x"></use></svg>
                     X / @CPUtzler
                   </span>
                   <span>open ↗</span>
@@ -568,53 +329,44 @@ C      O   O  R  R       N  NN   Z
             <section class="content-section" id="off-duty" aria-labelledby="off-duty-title">
               <header class="section-heading">
                 <div>
-                  <p class="section-index">05 / $ cat hobbies.txt</p>
-                  <h2 id="off-duty-title">Still curious after logout.</h2>
+                  <p class="section-index" id="off-duty-title">05 / AFK</p>
                 </div>
               </header>
 
               <div class="interest-grid">
                 <article>
-                  <span class="interest-icon" aria-hidden="true">[25*]</span>
+                  <svg class="interest-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#puzzle"></use></svg>
                   <h3>Coding puzzles</h3>
-                  <p>Advent of Code as an annual excuse to try another language or revisit an old algorithm.</p>
                 </article>
                 <article>
-                  <span class="interest-icon" aria-hidden="true">[LAB]</span>
+                  <svg class="interest-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#server"></use></svg>
                   <h3>Home lab & tools</h3>
-                  <p>Self-hosted systems and small utilities built because “almost right” is still not right.</p>
                 </article>
                 <article>
-                  <span class="interest-icon" aria-hidden="true">[FPS]</span>
+                  <svg class="interest-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#gamepad"></use></svg>
                   <h3>Gaming</h3>
-                  <p>Games with good systems, strong mechanics and enough depth to keep learning.</p>
                 </article>
                 <article>
-                  <span class="interest-icon" aria-hidden="true">[CRT]</span>
+                  <svg class="interest-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#joystick"></use></svg>
                   <h3>Retro gaming</h3>
-                  <p>Older hardware and games from a time when constraints shaped every design decision.</p>
                 </article>
                 <article>
-                  <span class="interest-icon" aria-hidden="true">[PR]</span>
+                  <svg class="interest-icon" aria-hidden="true"><use href="assets/icons.svg?v=retro-readable-16#dumbbell"></use></svg>
                   <h3>Strength training</h3>
-                  <p>Consistent work, measurable progress and the occasional lesson in patience.</p>
                 </article>
               </div>
             </section>
 
         </div>
 
-        <section class="mobile-terminal-dock" id="mobile-terminal-dock" aria-label="Interactive terminal">
-          <p class="section-index">interactive / $ ./cor.nz</p>
-        </section>
       </main>
 
       <footer class="site-footer">
-        <p><span>build:</span> HTML · CSS · JavaScript · external dependencies: none</p>
+        <p>Handmade HTML. No trackers.</p>
         <p>
           <a href="impressum.html">Legal notice</a> ·
           <a href="datenschutz.html">Privacy</a> ·
-          <a href="#top">cd ~ ↑</a> ·
+          <a href="#top">Back to top ↑</a> ·
           © <span id="year">2026</span> cor.nz
         </p>
       </footer>
