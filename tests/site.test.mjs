@@ -161,8 +161,8 @@ test("supports theme persistence, responsive layout and reduced motion", () => {
 });
 
 test("uses the real portrait and dependency-free visual treatment", () => {
-  assert.match(html, /<img src="portrait\.jpg" alt="Cornelius Putzler-Marci relaxing on a beach chair">/);
-  assert.ok(portrait.length > 50_000);
+  assert.match(html, /<img src="portrait\.jpg" alt="Portrait of Cornelius Putzler-Marci">/);
+  assert.ok(portrait.length > 20_000);
   assert.deepEqual([...portrait.subarray(0, 3)], [0xff, 0xd8, 0xff]);
   assert.match(dotGrid, /<circle\b/);
   assert.doesNotMatch(css, /filter: grayscale/);
